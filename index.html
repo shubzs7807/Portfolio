@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Nanekar | .NET Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        body { background-color: #030303; color: #e5e7eb; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .neon-text { color: #00f2ff; text-shadow: 0 0 10px rgba(0, 242, 255, 0.5); }
+        .gradient-bg { background: linear-gradient(135deg, #00f2ff 0%, #7000ff 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.08); transition: all 0.3s ease; }
+        .glass-card:hover { border-color: #00f2ff; transform: translateY(-5px); }
+        .contact-bar { background: rgba(0, 242, 255, 0.1); border-bottom: 1px solid rgba(0, 242, 255, 0.2); }
+    </style>
+</head>
+<body>
+
+    <div class="contact-bar w-full py-2 px-6 fixed top-0 z-[60] backdrop-blur-md">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-center md:justify-end gap-6 text-sm font-bold">
+            <a href="mailto:shubhamnanekar24@gmail.com" class="flex items-center gap-2 hover:text-cyan-400 transition-all">
+                <i class="fas fa-envelope text-cyan-400"></i> shubhamnanekar24@gmail.com
+            </a>
+            <a href="tel:8459957787" class="flex items-center gap-2 hover:text-cyan-400 transition-all">
+                <i class="fas fa-phone-alt text-cyan-400"></i> +91 8459957787
+            </a>
+        </div>
+    </div>
+
+    <nav class="fixed w-full z-50 px-6 py-4 mt-10 md:mt-8 bg-black/70 backdrop-blur-lg border-b border-white/5">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="text-xl font-extrabold tracking-tighter neon-text">SN<span class="text-white">.DEV</span></span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+                <a href="#about" class="hover:text-cyan-400 transition">About</a>
+                <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="min-h-screen flex flex-col items-center justify-center pt-32 px-6 text-center">
+        <div class="relative mb-8">
+            <div class="absolute inset-0 gradient-bg rounded-full blur-3xl opacity-20"></div>
+            <img src="Shubham_Nanekar.jpg" alt="Shubham Nanekar" class="relative w-48 h-48 rounded-full border-2 border-cyan-500 p-1 object-cover shadow-2xl">
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight text-white">Shubham <span class="neon-text">Nanekar</span></h1>
+        <p class="text-xl text-gray-400 max-w-2xl leading-relaxed mb-10">
+            Full Stack .NET Developer | 3 Years Experience. Specialist in Microservices, SQL Optimization, and RESTful APIs.
+        </p>
+        
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="mailto:shubhamnanekar24@gmail.com" class="flex items-center gap-3 gradient-bg px-8 py-4 rounded-2xl font-bold text-white hover:scale-105 transition-transform shadow-xl">
+                <i class="fas fa-paper-plane"></i> Email Me Now
+            </a>
+            <a href="tel:8459957787" class="flex items-center gap-3 glass-card px-8 py-4 rounded-2xl font-bold hover:bg-white/10 transition">
+                <i class="fas fa-phone-alt text-cyan-400"></i> Call Directly
+            </a>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold inline-block border-b-4 border-cyan-500 pb-2 uppercase tracking-widest">Technical Arsenal</h2>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="glass-card p-8 rounded-3xl text-center">
+                <i class="fas fa-server text-4xl text-cyan-400 mb-4"></i>
+                <h3 class="font-bold text-lg">Backend</h3>
+                <p class="text-xs text-gray-500 mt-3">.NET Core 6, C#, ASP.NET MVC, Web API</p>
+            </div>
+            <div class="glass-card p-8 rounded-3xl text-center">
+                <i class="fas fa-database text-4xl text-purple-400 mb-4"></i>
+                <h3 class="font-bold text-lg">Data</h3>
+                <p class="text-xs text-gray-500 mt-3">SQL Server, Entity Framework, LINQ</p>
+            </div>
+            <div class="glass-card p-8 rounded-3xl text-center">
+                <i class="fas fa-cloud-upload-alt text-4xl text-blue-400 mb-4"></i>
+                <h3 class="font-bold text-lg">DevOps</h3>
+                <p class="text-xs text-gray-500 mt-3">Azure DevOps, CI/CD, Git</p>
+            </div>
+            <div class="glass-card p-8 rounded-3xl text-center">
+                <i class="fas fa-layer-group text-4xl text-emerald-400 mb-4"></i>
+                <h3 class="font-bold text-lg">Frontend</h3>
+                <p class="text-xs text-gray-500 mt-3">Angular v12, TypeScript, Bootstrap</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-extrabold mb-12 text-white">Project Highlights</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="glass-card p-8 rounded-3xl border-t-4 border-cyan-500">
+                <h3 class="text-2xl font-bold mb-3 uppercase tracking-tight">Underwriting Automation Platform</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                    Developed the complete API layer using .NET Core 6 and Entity Framework. Implemented secure JWT authentication and complex SQL triggers.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-[10px] bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">RESTful APIs</span>
+                    <span class="text-[10px] bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">Microservices</span>
+                </div>
+            </div>
+            <div class="glass-card p-8 rounded-3xl border-t-4 border-purple-500">
+                <h3 class="text-2xl font-bold mb-3 uppercase tracking-tight">System Optimization</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                    Optimized database queries at Codereach Software, reducing API load times significantly. Improved performance by 30% using caching.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-[10px] bg-purple-500/10 text-purple-400 px-2 py-1 rounded">Performance Tuning</span>
+                    <span class="text-[10px] bg-purple-500/10 text-purple-400 px-2 py-1 rounded">SQL Server</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 border-t border-white/5 bg-[#050505]">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-4">Available for Opportunities</h2>
+            <p class="text-gray-500 mb-10">Currently active in Pune, Maharashtra.</p>
+            <div class="flex flex-col items-center gap-4 text-xl">
+                <a href="mailto:shubhamnanekar24@gmail.com" class="hover:text-cyan-400 transition">Email: shubhamnanekar24@gmail.com </a>
+                <a href="tel:8459957787" class="hover:text-cyan-400 transition">Phone: +91 8459957787 </a>
+            </div>
+            <p class="mt-16 text-[10px] text-gray-700 uppercase tracking-[0.5em]">&copy; 2026 SHUBHAM NANEKAR</p>
+        </div>
+    </footer>
+
+</body>
+</html>
