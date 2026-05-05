@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shubham Nanekar | Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00f5a0;
+      box-shadow: 0 0 25px rgba(0,245,160,0.7);
+      margin-bottom: 20px;
+      transition: 0.3s;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 40px rgba(0,245,160,1);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, #00f5a0, #00d9f5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .voice-btn {
+      background: #00f5a0;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      margin-top: 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .voice-btn:hover {
+      background: #00d9f5;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 20px;
+      padding: 25px;
+      margin: 20px 0;
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0,245,160,0.3);
+    }
+
+    h2 {
+      border-bottom: 2px solid #00f5a0;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #00f5a0;
+      color: black;
+      padding: 6px 12px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #aaa;
+    }
+
+    a {
+      color: #00f5a0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="profile.png" alt="Shubham Nanekar" class="profile-img">
+  <h1>Shubham Nanekar</h1>
+  <p>.NET Backend Developer | Python | API Specialist</p>
+
+  <!-- VOICE BUTTON -->
+  <button onclick="speakText()" class="voice-btn">🔊 Listen About Me</button>
+</header>
+
+<section>
+
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      Software Developer with hands-on experience in building scalable backend systems using .NET Core, C#, and Python.
+      Strong understanding of RESTful API design, microservices architecture, and database management.
+    </p>
+    <p>
+      Experienced in developing enterprise-level applications, implementing role-based access control (RBAC),
+      and optimizing backend performance. Skilled in API testing, debugging, and integration using tools like Postman and Swagger.
+    </p>
+    <p>
+      Passionate about writing clean, efficient code and continuously learning new technologies to solve real-world problems.
+    </p>
+  </div>
+
+  <h2>Skills</h2>
+  <div class="card skills">
+    <span>C#</span>
+    <span>.NET Core</span>
+    <span>ASP.NET MVC</span>
+    <span>Web API</span>
+    <span>Python</span>
+    <span>Flask</span>
+    <span>JavaScript</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>SQL Server</span>
+    <span>PostgreSQL</span>
+    <span>MySQL</span>
+    <span>REST APIs</span>
+    <span>Microservices</span>
+    <span>Postman</span>
+    <span>Swagger</span>
+    <span>Git</span>
+    <span>GitHub</span>
+    <span>Azure DevOps</span>
+    <span>CI/CD</span>
+    <span>Agile/Scrum</span>
+  </div>
+
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>BSE Surveillance System</h3>
+    <ul>
+      <li>Implemented Maker–Checker–Approver workflow</li>
+      <li>Built REST APIs for integration</li>
+      <li>Designed real-time dashboards</li>
+      <li>Optimized backend performance</li>
+    </ul>
+    <p><b>Tech:</b> .NET Core, SQL Server, JavaScript</p>
+  </div>
+
+  <div class="card">
+    <h3>Eye-Controlled Mouse</h3>
+    <ul>
+      <li>Real-time eye tracking</li>
+      <li>Cursor control via gestures</li>
+      <li>Accessibility-focused solution</li>
+    </ul>
+    <p><b>Tech:</b> Python, OpenCV, Mediapipe</p>
+  </div>
+
+  <div class="card">
+    <h3>API Testing & Validation</h3>
+    <ul>
+      <li>Validated HTTP methods</li>
+      <li>Handled authentication & errors</li>
+      <li>Created Postman test collections</li>
+    </ul>
+    <p><b>Tech:</b> Postman, Swagger, REST APIs</p>
+  </div>
+
+  <h2>Contact</h2>
+  <div class="card">
+<p>
+  Email: 
+  <a href="mailto:shubhamnanekar08@gmail.com">
+    shubhamnanekar08@gmail.com
+  </a>
+</p>
+
+<p>
+  Phone: 
+  <a href="tel:+919552185658">
+    +91 9552185658
+  </a>
+</p>
+    <p><a href="https://github.com/shubzs7807">GitHub Profile</a></p>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Shubham Nanekar
+</footer>
+
+<!-- VOICE SCRIPT -->
+<script>
+function speakText() {
+  const text = `
+  Hello, I am Shubham Nanekar.
+  I am a .NET Backend Developer with experience in building scalable applications using C Sharp and Python.
+  I specialize in REST APIs, microservices, and backend systems.
+  `;
+
+  const speech = new SpeechSynthesisUtterance(text);
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.volume = 1;
+
+  window.speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>
